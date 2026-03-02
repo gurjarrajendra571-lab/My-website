@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bundle Access</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0d0d0d;
+color:white;
+text-align:center;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+padding:20px;
+display:none;
+}
+
+input{
+padding:10px;
+border-radius:5px;
+border:none;
+margin-top:20px;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:5px;
+background:#00ff99;
+font-weight:bold;
+margin-left:10px;
+}
+
+.box{
+border:1px solid #f1c40f;
+padding:15px;
+border-radius:8px;
+margin:20px 0;
+background:#1a1a1a;
+}
+
+a{
+color:#1e90ff;
+font-weight:bold;
+text-decoration:none;
+}
+
+.bonus{
+color:#00ff99;
+font-size:20px;
+margin-top:30px;
+}
+
+.warning{
+border:1px solid red;
+padding:15px;
+border-radius:8px;
+background:#1a0000;
+margin-top:30px;
+}
+</style>
+
+<script>
+function checkPassword(){
+var pass = document.getElementById("pass").value;
+if(pass === "1234"){
+document.querySelector(".container").style.display="block";
+document.querySelector(".login").style.display="none";
+}else{
+alert("Wrong Password!");
+}
+}
+</script>
+
+</head>
+<body>
+
+<div class="login">
+<h2>🔒 Enter Password To Access</h2>
+<input type="password" id="pass" placeholder="Enter Password">
+<button onclick="checkPassword()">Enter</button>
+</div>
+
+<div class="container">
+
+<h1>🎉 Purchase Successful</h1>
+
+<div class="box">
+<h3>📌 Important Note</h3>
+<p>Follow proper upload method to avoid copyright issues.</p>
+</div>
+
+<h2>📦 Main Bundle</h2>
+
+<p>2000+ Hindi Animated Bundle<br>
+<a href="https://drive.google.com/drive/folders/1KJSJL0b5TSGHX9FrdD1wBjkb58o2H9Lx" target="_blank">Access</a></p>
+
+<p>Part-2 AI Hindi Kahani Bundle<br>
+<a href="https://drive.google.com/drive/folders/1I0wB7nZr7xOhzGIhfGDV6eRfa7VNd6hp" target="_blank">Access</a></p>
+
+<div class="bonus">🎁 Bonuses Worth ₹9990/- FREE</div>
+
+<p>4K Reels – <a href="https://drive.google.com/drive/folders/1C8A3QCVSblSK_Bj4KTGNkmF83avIcGIL">Access</a></p>
+<p>Travel Reels – <a href="https://drive.google.com/drive/folders/1UWRU6AtXQtpug36uWv4KXGw74D9UBRrb">Access</a></p>
+<p>Money Motivational – <a href="https://drive.google.com/drive/folders/1WonooF1nCX4aPtSpHjr_fpichdMOzTA8">Access</a></p>
+<p>500+ Fitness – <a href="https://drive.google.com/drive/folders/17TZxcANBRfCZQL0G0ZUnIeQ2FyVElq6A">Access</a></p>
+<p>1000+ Art & Craft – <a href="https://drive.google.com/drive/folders/1uvX4I50ffSWSI4I0391SHuMA87ap8MEL">Access</a></p>
+<p>500+ Cars – <a href="https://drive.google.com/drive/folders/1hpwetf4zqIs1Yt0R0g8dBREDJ_oN61oW">Access</a></p>
+<p>1000+ Wood Work – <a href="https://drive.google.com/drive/folders/1gkr0RrKbrz5yXGqBmWkbCu4L5PbFSam3">Access</a></p>
+<p>2400+ Tools – <a href="https://drive.google.com/drive/folders/1_JDuQqRyk5hDe6JiTVHwRx3c51BtHWQu">Access</a></p>
+<p>1000+ Tips & Tricks – <a href="https://drive.google.com/drive/folders/1V43pBAdaa4Xhtzvc5blXkeYMDr7RSa7l">Access</a></p>
+<p>1000+ Satisfying – <a href="https://drive.google.com/drive/folders/1jzhyjsiKPRWJSZZSsasz4qq8Kq9qapV5">Access</a></p>
+
+<div class="warning">
+⚠ Personal use only. Redistribution prohibited.
+</div>
+
+</div>
+
+</body>
